@@ -1,0 +1,351 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+
+  /* WARNA UTAMA */
+  --primary-color: #8fb8ff; /* biru pastel */
+  --secondary-color: #9caf88; /* hijau sage */
+  --accent-color: #ffffff; /* putih */
+
+  /* BACKGROUND */
+  --background-main: #f3f4f6; /* abu-abu */
+  --background-card: #1e3a5f; /* biru tua */
+
+  /* TEXT */
+  --text-main: #111111; /* hitam */
+  --text-secondary: #facc15; /* kuning */
+
+  /* LAINNYA */
+  --border-radius: 14px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--background-main);
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   SECTION
+========================= */
+.section {
+  padding: 90px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: var(--accent-color);
+  box-shadow: var(--shadow);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-main);
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--primary-color);
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text-main);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  color: var(--text-secondary);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: 0.3s;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background: var(--primary-color);
+  color: black;
+}
+
+.secondary-btn {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.responsive-image {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+
+/* =========================
+   CARD GRID
+========================= */
+.card-grid,
+.feature-grid,
+.team-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* =========================
+   CARD
+========================= */
+.card,
+.feature-card,
+.team-card {
+  background: var(--accent-color);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.card:hover,
+.feature-card:hover,
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   TARGET
+========================= */
+.target {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* =========================
+   SOLUSI
+========================= */
+.dark-section {
+  background: var(--background-card);
+  color: white;
+}
+
+.solusi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.benefit-list {
+  margin-top: 20px;
+}
+
+.benefit-item {
+  margin-bottom: 15px;
+}
+
+/* =========================
+   ACCESS SECTION
+========================= */
+.access-section {
+  text-align: center;
+}
+
+.access-buttons {
+  margin-top: 30px;
+}
+
+/* =========================
+   TEAM
+========================= */
+.team-card {
+  text-align: center;
+}
+
+.team-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: var(--background-card);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* =========================
+   ANIMASI SCROLL
+========================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+  .hero-grid,
+  .solusi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+
+    background: white;
+    width: 220px;
+
+    flex-direction: column;
+    padding: 20px;
+
+    border-radius: var(--border-radius);
+
+    display: none;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
