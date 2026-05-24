@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Khulafaur Rasyidin</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    /* =========================
+       LAYOUT BELAJAR
+    ========================== */
+    .belajar-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 100vh;
+    }
+
+    /* =========================
+       SIDEBAR
+    ========================== */
+    .sidebar {
+      background: var(--background-card);
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 12px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      color: var(--text-secondary);
+    }
+
+    /* =========================
+       CONTENT
+    ========================== */
+    .content {
+      padding: 40px;
+    }
+
+    .content h1 {
+      margin-bottom: 20px;
+    }
+
+    .content-section {
+      margin-bottom: 60px;
+    }
+
+    .content-image {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      margin-top: 20px;
+      object-fit: cover;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+    @media (max-width: 768px) {
+
+      .belajar-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 0;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="belajar-layout">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside class="sidebar">
+
+      <h2>Daftar Bab</h2>
+
+      <ul>
+
+        <li>
+          <strong>Bab 1: Pendahuluan</strong>
+          <ul>
+            <li><a href="#bab1">1.1 Apa Itu Khalifah ?</a></li>
+            <li><a href="#bab1">1.2 Masa Khulafaur Rasyidin</a></li>
+          </ul>
+        </li>
+
+        <br>
+
+        <li>
+          <strong>Bab 2: Masa Abu Bakar</strong>
+          <ul>
+            <li><a href="#bab2">2.1 Siapakah Abu Bakar</a></li>
+            <li><a href="#bab2">2.2 Pengangkatan Khalifah</a></li>
+          </ul>
+        </li>
+
+        <br>
+
+        <li>
+          <strong>Bab 3: Umar bin Khattab</strong>
+          <ul>
+            <li><a href="#bab3">3.1 Siapakah Umar</a></li>
+            <li><a href="#bab3">3.2 Pengangkatan Khalifah</a></li>
+          </ul>
+        </li>
+
+        <br>
+
+        <li>
+          <strong>Bab 4: Utsman bin Affan</strong>
+          <ul>
+            <li><a href="#bab4">4.1 Siapakah Utsman</a></li>
+            <li><a href="#bab4">4.2 Pengangkatan Khalifah</a></li>
+          </ul>
+        </li>
+
+        <br>
+
+        <li>
+          <strong>Bab 5: Ali bin Abi Thalib</strong>
+          <ul>
+            <li><a href="#bab5">5.1 Siapakah Ali</a></li>
+            <li><a href="#bab5">5.2 Pengangkatan Khalifah</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </aside>
+
+    <!-- =========================
+         CONTENT
+    ========================== -->
+    <main class="content">
+
+      <h1>Khulafaur Rasyidin</h1>
+
+      <p>
+        Mempelajari sejarah khulafaur rasyidin tanpa membuat bosan.
+      </p>
+
+      <!-- BAB 1 -->
+      <section class="content-section" id="bab1">
+
+        <h2>Bab 1 - Pendahuluan</h2>
+
+        <p>
+          Penjelasan mengenai etimologi kata "Khalifah" yang berarti
+          pengganti atau pemimpin. Peran Khalifah sebagai pemimpin umat
+          Islam dalam urusan kenegaraan dan agama setelah wafatnya Nabi
+          Muhammad SAW.
+        </p>
+
+      </section>
+
+      <!-- BAB 2 -->
+      <section class="content-section" id="bab2">
+
+        <h2>Bab 2 - Abu Bakar Ash-Shiddiq</h2>
+
+        <p>
+          Abu Bakar Ash-Shiddiq (632–634 M), pemimpin pertama yang fokus
+          pada stabilitas umat, memerangi kemurtadan (Perang Riddah),
+          dan merintis pengumpulan naskah Al-Qur'an.
+        </p>
+
+      </section>
+
+      <!-- BAB 3 -->
+      <section class="content-section" id="bab3">
+
+        <h2>Bab 3 - Umar bin Khattab</h2>
+
+        <p>
+          Umar bin Khattab (634–644 M), sang Al-Faruq yang memperluas
+          wilayah Islam secara signifikan dan menetapkan kalender Hijriah.
+        </p>
+
+      </section>
+
+      <!-- BAB 4 -->
+      <section class="content-section" id="bab4">
+
+        <h2>Bab 4 - Utsman bin Affan</h2>
+
+        <p>
+          Utsman bin Affan (644–656 M), dikenal karena jasanya dalam
+          membukukan Al-Qur'an menjadi satu mushaf standar.
+        </p>
+
+        <!-- Placeholder gambar -->
+        <img
+          src="https://i.ibb.co.com/Y78tzp7k/11.png"
+          alt="Ilustrasi proses kompilasi mushaf Al-Qur'an pertama"
+          class="content-image"
+        />
+
+      </section>
+
+      <!-- BAB 5 -->
+      <section class="content-section" id="bab5">
+
+        <h2>Bab 5 - Ali bin Abi Thalib</h2>
+
+        <p>
+          Ali bin Abi Thalib (656–661 M), menghadapi tantangan konflik
+          internal besar namun tetap teguh dalam menegakkan keadilan.
+        </p>
+
+        <!-- Placeholder Video -->
+        <iframe
+          src="https://www.youtube.com/embed/JsVXMUur_68"
+          allowfullscreen>
+        </iframe>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
